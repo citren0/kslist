@@ -1,0 +1,42 @@
+.alert
+{
+    padding: 20px;
+    color: white;
+    margin-bottom: 0.5rem;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alert-error
+{
+    color: white;
+    background-color: #c20068;
+}
+
+.alert-warning
+{
+    color: black;
+    background-color: #e2e25d;
+}
+
+.alert-info
+{
+    color: white;
+    background-color: #000da0;
+}
+
+.btn-alert-close
+{
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+}
+.btn-alert-close:hover
+{
+    color: black;
+}

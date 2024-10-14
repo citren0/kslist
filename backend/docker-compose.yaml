@@ -1,0 +1,34 @@
+version: '3.9'
+services:
+
+  kenzie:
+    hostname: kenzie
+    user: server
+    build: .
+    env_file: .env
+    expose:
+      - '3000'
+    networks:
+      - default
+    volumes:
+      - ./:/home/node/app
+      - ./cache:/root/.cache
+
+  webserver:
+    image: nginx:latest
+    restart: unless-stopped
+    ports:
+      - "2443:2443"
+    volumes:
+      - web-root:/var/www/html
+      - ./nginx-conf:/etc/nginx/conf.d
+    depends_on:
+      - kenzie
+    networks:
+      - default 
+
+networks:
+  default:
+
+volumes:
+  web-root:

@@ -1,0 +1,5 @@
+{
+    "api_endpoints": {
+        "get_products": "http://localhost:2443/get_products"
+    }
+}

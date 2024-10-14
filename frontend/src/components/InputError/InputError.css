@@ -1,0 +1,22 @@
+.error-text
+{
+    font-size: 18px;
+    color: #131313;
+}
+
+.flex-warning
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    align-items: center;
+    background-color: #f3f3b4;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.warning-image-relative
+{
+    position: relative;
+    bottom: 1.5px;
+}

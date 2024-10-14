@@ -1,0 +1,64 @@
+
+.left-button
+{
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e0e0e0;
+    color: black;
+    font-weight: 600;
+    border-width: 0;
+}
+.left-button:hover
+{
+    background-color: #d0d0d0;
+}
+
+.right-button
+{
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #e0e0e0;
+    color: black;
+    font-weight: 600;
+    border-width: 0;
+}
+.right-button:hover
+{
+    background-color: #d0d0d0;
+}
+
+.left-button-selected
+{
+    border-width: 0;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    background-color: #001238;
+    color: white;
+    font-weight: 600;
+}
+
+.right-button-selected
+{
+    border-width: 0;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.5rem 0.4rem 0.5rem;
+    background-color: #001238;
+    color: white;
+    font-weight: 600;
+}
+
+.flex-dual-button
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0px;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    background-color: #e0e0e0;
+}
+
+.width-fit-content
+{
+    width: fit-content;
+}

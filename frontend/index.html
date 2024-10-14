@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kenzie's App</title>
+  </head>
+
+  <body>
+    <noscript>
+      <style>
+        @font-face
+        {
+            font-family: 'Overpass';
+            src: url('https://dm8ycatpatapg.cloudfront.net/Overpass-VariableFont_wght.ttf');
+        }
+
+        *
+        {
+            font-family: "Overpass", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+      </style>
+      <div style="display: flex; flex-flow: column; align-items: center; justify-content: center; gap: 1rem; padding: 5rem 2rem 2rem 2rem;">
+        <p style="font-size: 48px; font-weight: 700; text-align: center;">JavaScript is disabled. Enable it to use the app.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
