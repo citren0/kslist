@@ -22,6 +22,8 @@ services:
     volumes:
       - web-root:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
+      - ./certs:/etc/letsencrypt/live/kenzieslist.com
+      - certbot-var:/var/lib/letsencrypt
     depends_on:
       - kenzie
     networks:
@@ -32,3 +34,5 @@ networks:
 
 volumes:
   web-root:
+  certbot-etc:
+  certbot-var:
