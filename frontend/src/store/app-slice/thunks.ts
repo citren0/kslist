@@ -6,7 +6,7 @@ const setUpApplication = (): AppThunk => async (dispatch, getState) =>
 {
     dispatch(setAllConfigs(config.api_endpoints));
 
-    document.title = "Kenzie's App";
+    document.title = "K's List";
 
     return true;
 }

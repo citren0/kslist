@@ -57,14 +57,14 @@ const App = () =>
 						</>);
 					}) }
 				</div>
-				<div className="flex-center-row">
+				<form onSubmit={(e: React.FormEvent<HTMLFormElement>) => { e.preventDefault(); dispatch(getProducts(query, allergens)); }} className="flex-center-row">
 					<SimpleInput
 						image={search_image}
 						onChange={(e: React.FormEvent<HTMLInputElement>) => setQuery(e.currentTarget.value)}
 						type="text"
 					/>
-					<button onClick={() => dispatch(getProducts(query, allergens))} className="btn-prominent-small">Search</button>
-				</div>
+					<button className="btn-prominent-small">Search</button>
+				</form>
 
 				<div className="product-list">
 					

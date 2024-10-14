@@ -1,8 +1,8 @@
 version: '3.9'
 services:
 
-  kenzie:
-    hostname: kenzie
+  kslist:
+    hostname: kslist
     user: server
     build: .
     env_file: .env
@@ -22,10 +22,10 @@ services:
     volumes:
       - web-root:/var/www/html
       - ./nginx-conf:/etc/nginx/conf.d
-      - ./certs:/etc/letsencrypt/live/kenzieslist.com
+      - ./certs:/etc/letsencrypt/live/kslist.org
       - certbot-var:/var/lib/letsencrypt
     depends_on:
-      - kenzie
+      - kslist
     networks:
       - default 
 
