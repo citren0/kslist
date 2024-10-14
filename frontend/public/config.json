@@ -1,5 +1,5 @@
 {
     "api_endpoints": {
-        "get_products": "http://kslist.org:2443/get_products"
+        "get_products": "https://kslist.org:2443/get_products"
     }
 }
