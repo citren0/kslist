@@ -5,7 +5,7 @@ const NavBar = () =>
     return (
         <>
             <div className="nav flex-space-around">
-                <h1>Whole Foods Finder</h1>
+                <h1>Kenzie's List</h1>
             </div>
         </>
     )
