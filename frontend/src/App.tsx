@@ -18,7 +18,7 @@ const App = () =>
 	const products = useSelector(productsSelectors.selectProducts);
 	const isLoading = useSelector(productsSelectors.selectGetProductsThunkStatus).thunkStatus == AsyncThunkStatus.Pending;
 
-	const allPossibleAllergens = [ "wheat", "rice", "tomato", "vanilla", "milk", "dairy", "gluten", "peanuts", "tree nuts", "soy" ];
+	const allPossibleAllergens = [ "wheat", "rice", "tomato", "vanilla", "milk", "dairy", "gluten", "peanuts", "tree nuts", "soy", "oat" ];
 
 	const [ allergens, setAllergens ] = useState<string[]>([]);
 
