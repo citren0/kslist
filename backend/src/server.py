@@ -108,6 +108,10 @@ def getProducts(query, disallowed, offset):
 
 @app.route("/get_products", methods=["GET"])
 def summarize():
+
+    if "query" not in request.args or "allergen" not in request.args or "offset" not in request.args:
+        return Response(status=400)
+
     query = request.args.get("query")
     disallowed = request.args.getlist("allergen")
     offset = request.args.get("offset")

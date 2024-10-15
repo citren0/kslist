@@ -82,6 +82,11 @@ html
   }
 }
 
+body
+{
+  margin: 0;
+}
+
 img
 {
   max-width: 90vw;
@@ -105,13 +110,30 @@ h2
   max-width: 90vw;
 }
 
-.flex-center-row
+.home-explanation
+{
+  text-align: center;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  font-size: 20px;
+}
+
+.flex-space-around-row
 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 2rem;
   align-content: center;
+}
+
+.flex-center-row
+{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-content: center;
+  align-items: center;
 }
 
 .flex-image-collage
@@ -129,7 +151,8 @@ h2
   flex-flow: row wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem 5rem 2rem 5rem;
+  padding: 2rem 10vw 2rem 10vw;
+  max-width: calc(100% - 20vw - 1px);
 }
 
 .flex-collection
@@ -268,7 +291,7 @@ h2
 
 .btn-prominent
 {
-    background-image: linear-gradient(to right, #1D24CA 0%, #6C1DCA 100%);
+    background-image: linear-gradient(90deg, rgba(0,54,70,1) 35%, rgba(0,0,98,1) 100%);
     font-size: 20px;
     padding: 0.6rem 1.5rem 0.6rem 1.5rem;
     background-size: 200% auto;
@@ -285,7 +308,7 @@ h2
 
 .btn-prominent-small
 {
-    background-image: linear-gradient(to right, #1D24CA 0%, #6C1DCA 100%);
+    background-image: linear-gradient(90deg, rgba(0,54,70,1) 35%, rgba(0,0,98,1) 100%);
     font-size: 18px;
     padding: 0.5rem 1.3rem 0.5rem 1.3rem;
     background-size: 200% auto;
@@ -313,6 +336,7 @@ h2
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  gap: 0.25rem;
 }
 
 .rounded-img

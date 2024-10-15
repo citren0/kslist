@@ -37,11 +37,12 @@ const App = () =>
 		<NavBar />
 		<div className="content-layout">
 			<div className="flex-center align-self-center gap-1">
-				<p>Enter allergens or ingredients you would like to avoid, and then type what you're searching for.</p>
-				<div className="flex-center-row" style={{gap: "2rem"}}>
+				<span className="home-explanation">Enter allergens or ingredients you would like to avoid, and then type what you're searching for.</span>
+				
+				<div className="flex-center-row" style={{gap: "0 2rem"}}>
 					{ allPossibleAllergens.map((allergen) => {
 						return (<>
-							<div className="check-item">
+							<div className="check-item" key={allergen}>
 								<input type="checkbox" id={allergen} name={allergen} value={allergen} onClick={() => {
 									if (allergens.includes(allergen))
 									{
@@ -57,7 +58,12 @@ const App = () =>
 						</>);
 					}) }
 				</div>
-				<form onSubmit={(e: React.FormEvent<HTMLFormElement>) => { e.preventDefault(); dispatch(getProducts(query, allergens)); }} className="flex-center-row">
+
+				<form
+					onSubmit={(e: React.FormEvent<HTMLFormElement>) => { e.preventDefault(); dispatch(getProducts(query, allergens)); }}
+					className="flex-center-row"
+					style={{gap: "0.5rem 1.25rem"}}
+				>
 					<SimpleInput
 						image={search_image}
 						onChange={(e: React.FormEvent<HTMLInputElement>) => setQuery(e.currentTarget.value)}
@@ -80,6 +86,7 @@ const App = () =>
 									link_url={product.link}
 									name={product.name}
 									okay={product.okay}
+									key={product.link}
 								/>
 							</>;
 						})

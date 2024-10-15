@@ -5,12 +5,13 @@
     border: 1px solid #a0a0a0;
     padding: 0.5rem;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     gap: 0.5rem;
     align-items: center;
     justify-content: center;
     background-color: #fafafa;
     box-shadow: 5px 3px 3px #d0d0d0;
+    max-width: 85vw;
 }
 
 .card-text
